@@ -30,5 +30,5 @@ Desenvolvedor Full Stack desde 2007 e nos últimos anos atuando principalmente n
 
 
 ## 🔗 Links
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](www.linkedin.com/in/alex-ribeiro-de-lima)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/alex-ribeiro-de-lima)
 

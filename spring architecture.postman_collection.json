@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "84ac8139-b547-4815-937a-eddf772090c2",
+		"name": "Spring Architecture",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29124125"
+	},
+	"item": [
+		{
+			"name": "Usuário cadastrar",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Carolina Miranda\",\r\n    \"email\": \"carolina@cormus.com\",\r\n    \"telefone\": \"83988883335\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Avenida Marciel Pinheiro\",\r\n        \"numero\": \"555\",\r\n        \"complemento\": \"Casa\",\r\n        \"uf\": \"PB\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"Campina Grande\",\r\n        \"cep\": \"58407478\"\r\n    }\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuário atualizar",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"nome\": \"Alex Ribeiro de Lima\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuário excluir",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/usuario/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuario",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuários listar",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/usuario",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuario"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Usuários lista paginada",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/usuario/paginacao?size=1&page=1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"usuario",
+						"paginacao"
+					],
+					"query": [
+						{
+							"key": "size",
+							"value": "1"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

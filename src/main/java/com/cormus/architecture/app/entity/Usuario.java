@@ -1,11 +1,14 @@
 package com.cormus.architecture.app.entity;
 
+import com.cormus.architecture.app.dto.UsuarioAtualizacaoDto;
 import com.cormus.architecture.app.dto.UsuarioCadastroDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
+
+import java.time.LocalDateTime;
 
 @Table(name = "usuario")
 @Entity(name = "Usuário")
@@ -22,6 +25,8 @@ public class Usuario {
     private String nome;
     private String telefone;
     private String email;
+    @Column(name = "deleted_at")
+    private LocalDateTime deletedAt;
 
     @Embedded
     private Endereco endereco;
@@ -31,5 +36,13 @@ public class Usuario {
         this.telefone = usuario.telefone();
         this.email = usuario.email();
         this.endereco = new Endereco(usuario.endereco());
+    }
+
+    public void atualizar(UsuarioAtualizacaoDto usuario){
+        this.nome = usuario.getNome();
+    }
+
+    public void excluir(){
+        this.deletedAt = LocalDateTime.now();
     }
 }

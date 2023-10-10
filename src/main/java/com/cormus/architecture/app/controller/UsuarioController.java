@@ -64,6 +64,13 @@ public class UsuarioController {
         return ResponseEntity.ok(new UsuarioDetalhamentoDto(usuarioEnt));
     }
 
+
+    @GetMapping("/{id}")
+    public ResponseEntity detalhar(@PathVariable Long id){
+        Usuario usuarioEnt = repository.getReferenceById(id);
+        return ResponseEntity.ok(new UsuarioDetalhamentoDto(usuarioEnt));
+    }
+
     @DeleteMapping("/{id}")
     @Transactional
     public ResponseEntity excluir(@PathVariable Long id){

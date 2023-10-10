@@ -24,7 +24,7 @@
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Alex Ribeiro\",\r\n    \"email\": \"alex@cormus.com\",\r\n    \"telefone\": \"83988883335\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Avenida Marciel Pinheiro\",\r\n        \"numero\": \"555\",\r\n        \"complemento\": \"Casa\",\r\n        \"uf\": \"PB\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"Campina Grande\",\r\n        \"cep\": \"58407478\"\r\n    }\r\n}"
+					"raw": "{\r\n    \"nome\": \"Alex Ribeiro\",\r\n    \"email\": \"alex@cormus.com\",\r\n    \"senha\": \"123\",\r\n    \"telefone\": \"83988883335\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Avenida Marciel Pinheiro\",\r\n        \"numero\": \"555\",\r\n        \"complemento\": \"Casa\",\r\n        \"uf\": \"PB\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"Campina Grande\",\r\n        \"cep\": \"58407478\"\r\n    }\r\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/api/v1/usuario",
@@ -175,6 +175,35 @@
 						"v1",
 						"usuario",
 						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"login\": \"alex@cormus.com\",\r\n    \"senha\": \"123\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"login"
 					]
 				}
 			},

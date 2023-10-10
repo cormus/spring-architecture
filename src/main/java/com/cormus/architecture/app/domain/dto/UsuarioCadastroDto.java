@@ -6,7 +6,7 @@ import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Pattern;
 
-public record UsuarioCadastroDto(
+public record UsuarioCadastroDto<senha>(
         @NotBlank
         String nome,
 
@@ -17,6 +17,9 @@ public record UsuarioCadastroDto(
         @NotBlank
         @Email
         String email,
+
+        @NotBlank
+        String senha,
 
         @Valid
         @NotNull

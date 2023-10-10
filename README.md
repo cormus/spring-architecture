@@ -8,6 +8,8 @@ Tecnologias utilizadas:
 - Java 17
 - Spring Boot
 - Spring Validation
+- Spring Security
+- Java JWT - Auth0
 - JPA/Hibernate
 - Maven 
 - Flyway Migrations

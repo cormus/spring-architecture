@@ -1,11 +1,11 @@
 package com.cormus.architecture.app.controller;
 
-import com.cormus.architecture.app.dto.UsuarioAtualizacaoDto;
-import com.cormus.architecture.app.dto.UsuarioCadastroDto;
-import com.cormus.architecture.app.dto.UsuarioDetalhamentoDto;
-import com.cormus.architecture.app.dto.UsuarioListaDto;
-import com.cormus.architecture.app.entity.Usuario;
-import com.cormus.architecture.app.repository.UsuarioRepository;
+import com.cormus.architecture.app.domain.dto.UsuarioAtualizacaoDto;
+import com.cormus.architecture.app.domain.dto.UsuarioCadastroDto;
+import com.cormus.architecture.app.domain.dto.UsuarioDetalhamentoDto;
+import com.cormus.architecture.app.domain.dto.UsuarioListaDto;
+import com.cormus.architecture.app.domain.entity.Usuario;
+import com.cormus.architecture.app.domain.repository.UsuarioRepository;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -19,7 +19,6 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import java.net.URI;
 import java.util.List;
-import java.util.Optional;
 
 @Controller
 @RestController

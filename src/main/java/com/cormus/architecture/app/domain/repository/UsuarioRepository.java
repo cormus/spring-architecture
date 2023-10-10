@@ -1,6 +1,6 @@
-package com.cormus.architecture.app.repository;
+package com.cormus.architecture.app.domain.repository;
 
-import com.cormus.architecture.app.entity.Usuario;
+import com.cormus.architecture.app.domain.entity.Usuario;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;

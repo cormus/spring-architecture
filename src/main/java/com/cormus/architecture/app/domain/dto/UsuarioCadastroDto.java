@@ -1,4 +1,4 @@
-package com.cormus.architecture.app.dto;
+package com.cormus.architecture.app.domain.dto;
 
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Email;

@@ -1,7 +1,7 @@
-package com.cormus.architecture.app.entity;
+package com.cormus.architecture.app.domain.entity;
 
-import com.cormus.architecture.app.dto.UsuarioAtualizacaoDto;
-import com.cormus.architecture.app.dto.UsuarioCadastroDto;
+import com.cormus.architecture.app.domain.dto.UsuarioAtualizacaoDto;
+import com.cormus.architecture.app.domain.dto.UsuarioCadastroDto;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;

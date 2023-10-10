@@ -1,4 +1,4 @@
-package com.cormus.architecture.app.dto;
+package com.cormus.architecture.app.domain.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;

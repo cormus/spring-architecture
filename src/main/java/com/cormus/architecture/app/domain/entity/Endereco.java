@@ -1,6 +1,6 @@
-package com.cormus.architecture.app.entity;
+package com.cormus.architecture.app.domain.entity;
 
-import com.cormus.architecture.app.dto.EnderecoDto;
+import com.cormus.architecture.app.domain.dto.EnderecoDto;
 import jakarta.persistence.Embeddable;
 import lombok.AllArgsConstructor;
 import lombok.Getter;

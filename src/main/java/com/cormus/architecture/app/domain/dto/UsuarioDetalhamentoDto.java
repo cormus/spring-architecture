@@ -1,6 +1,6 @@
-package com.cormus.architecture.app.dto;
+package com.cormus.architecture.app.domain.dto;
 
-import com.cormus.architecture.app.entity.Usuario;
+import com.cormus.architecture.app.domain.entity.Usuario;
 
 public record UsuarioDetalhamentoDto(Long id, String nome) {
 

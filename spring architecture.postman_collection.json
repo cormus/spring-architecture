@@ -15,11 +15,16 @@
 						"key": "Content-Type",
 						"value": "application/json",
 						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "pt-br",
+						"type": "text"
 					}
 				],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"nome\": \"Carolina Miranda\",\r\n    \"email\": \"carolina@cormus.com\",\r\n    \"telefone\": \"83988883335\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Avenida Marciel Pinheiro\",\r\n        \"numero\": \"555\",\r\n        \"complemento\": \"Casa\",\r\n        \"uf\": \"PB\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"Campina Grande\",\r\n        \"cep\": \"58407478\"\r\n    }\r\n}"
+					"raw": "{\r\n    \"nome\": \"Alex Ribeiro\",\r\n    \"email\": \"alex@cormus.com\",\r\n    \"telefone\": \"83988883335\",\r\n    \"endereco\": {\r\n        \"logradouro\": \"Avenida Marciel Pinheiro\",\r\n        \"numero\": \"555\",\r\n        \"complemento\": \"Casa\",\r\n        \"uf\": \"PB\",\r\n        \"bairro\": \"Centro\",\r\n        \"cidade\": \"Campina Grande\",\r\n        \"cep\": \"58407478\"\r\n    }\r\n}"
 				},
 				"url": {
 					"raw": "http://localhost:8080/api/v1/usuario",

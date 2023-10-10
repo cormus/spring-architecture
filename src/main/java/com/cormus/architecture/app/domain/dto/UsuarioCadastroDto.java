@@ -18,6 +18,9 @@ public record UsuarioCadastroDto(
         @Email
         String email,
 
+        @NotBlank
+        String senha,
+
         @Valid
         @NotNull
         EnderecoDto endereco

@@ -1,6 +1,9 @@
 package com.cormus.architecture.app.controller;
 
 import com.cormus.architecture.app.domain.dto.AutenticacaoDto;
+import com.cormus.architecture.app.domain.entity.Usuario;
+import com.cormus.architecture.app.infra.security.AutenticacaoTokenDto;
+import com.cormus.architecture.app.infra.security.SecurityTokenService;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -19,12 +22,17 @@ public class AutenticacaoController {
     @Autowired
     private AuthenticationManager authenticationManager;
 
+    @Autowired
+    private SecurityTokenService securityTokenService;
+
     @PostMapping
     public ResponseEntity logar(@RequestBody @Valid AutenticacaoDto autenticacao){
-        UsernamePasswordAuthenticationToken token = new UsernamePasswordAuthenticationToken(autenticacao.login(), autenticacao.senha());
-        Authentication autentication = authenticationManager.authenticate(token);
+        UsernamePasswordAuthenticationToken authenticationToken = new UsernamePasswordAuthenticationToken(autenticacao.login(), autenticacao.senha());
+        Authentication autentication = authenticationManager.authenticate(authenticationToken);
 
-        return ResponseEntity.ok().build();
+        String jwtToken = securityTokenService.gerarToken((Usuario) autentication.getPrincipal());
+
+        return ResponseEntity.ok(new AutenticacaoTokenDto(jwtToken));
     }
 
 }

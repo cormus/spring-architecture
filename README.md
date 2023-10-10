@@ -9,6 +9,7 @@ Tecnologias utilizadas:
 - Spring Boot
 - Spring Validation
 - Spring Security
+- Java JWT - Auth0
 - JPA/Hibernate
 - Maven 
 - Flyway Migrations

@@ -6,6 +6,7 @@ import com.cormus.architecture.app.domain.dto.UsuarioDetalhamentoDto;
 import com.cormus.architecture.app.domain.dto.UsuarioListaDto;
 import com.cormus.architecture.app.domain.entity.Usuario;
 import com.cormus.architecture.app.domain.repository.UsuarioRepository;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -24,6 +25,7 @@ import java.util.List;
 @Controller
 @RestController
 @RequestMapping(value = "api/v1/usuario")
+@SecurityRequirement(name = "bearer-key")
 public class UsuarioController {
 
     @Autowired

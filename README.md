@@ -15,6 +15,7 @@ Tecnologias utilizadas:
 - Flyway Migrations
 - Lombok
 - Mysql Connector
+- Swagger - Springdoc
 
 *******
 
